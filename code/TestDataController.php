@@ -6,7 +6,7 @@ class TestDataController extends Controller {
 
 	static function get_data_dir() {
 		if (isset(self::$data_dir)) return self::$data_dir;
-		return project().'/testdata/';
+		return project().'/simple-yaml-testdata/';
 	}
 
 	function init() {
@@ -40,7 +40,11 @@ The available commands are:
 
    export    Accesses the exporter for the data currently in the database (reverse of load).
 
+   simple    Accesses the simple exporter for the data currently in the database (reverse of load).
+
+
    translate Accesses the site translator for testing multiple Translatable translations.
+
 </pre>
 ");
 	}
