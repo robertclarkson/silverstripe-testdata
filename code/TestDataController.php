@@ -6,7 +6,7 @@ class TestDataController extends Controller {
 
 	static function get_data_dir() {
 		if (isset(self::$data_dir)) return self::$data_dir;
-		return project().'/simple-yaml-testdata/';
+		return '/simple-yaml-testdata/';
 	}
 
 	function init() {

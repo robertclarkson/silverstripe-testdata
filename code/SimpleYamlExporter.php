@@ -66,13 +66,15 @@ class SimpleYamlExporter extends Controller {
 
 		// Create file name input field
 		$fields->push(new TextField('FileName', 'Name of the output YML file: ', 'output.yml'));
-		$fields->push(
-			DropdownField::create(
-				'SubsiteID',
-				'Subsite: ', 
-				Subsite::get()->map('ID', 'Title')
-			)
-		);
+		if (class_exists ('Subsite')) {
+			$fields->push(
+				DropdownField::create(
+					'SubsiteID',
+					'Subsite: ', 
+					Subsite::get()->map('ID', 'Title')
+				)
+			);
+		}
 	
 		// Create actions for the form
 		$actions = new FieldList(new FormAction("export", "Export"));
