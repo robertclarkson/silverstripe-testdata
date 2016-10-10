@@ -2,7 +2,7 @@
 
 ## Maintainer 
 
-[Mateusz Uzdowski](mailto:mateusz@silverstripe.com)
+[Rob Clarkson](mailto:rob@robertclarkson.net)
 
 ## Requirements 
 
