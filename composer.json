@@ -1,5 +1,5 @@
 {
-	"name": "silverstripe/testdata-simpleexporter",
+	"name": "robertclarkson/simple-yaml-testdata",
 	"description": "Manage test data with Yaml files, and export to YAML simply",
 	"type": "silverstripe-module",
 	"keywords": ["silverstripe"],
